@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .images-container img{
+            width: 200px;
+        }
+
+        .modal-image{
+            width: 500px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="images-container">
+      <img src="file 3840x2160_000298.jpg" alt="" />
+      <img src="file 3840x2160_000320.jpg" alt="" />
+      <img src="file 3840x2160_000322.jpg" alt="" />
+      <img src="img33.png" alt="" />
+    </div>
+    <div class="modal">
+        <img src="" alt="" class="modal-image">
+    </div>
+    <script>
+        let images = document.querySelectorAll(".images-container img");
+        let modal = document.getElementsByClassName('modal-image')[0];
+
+        images.forEach(image => {
+            image.addEventListener("click", function(){
+                modal.src = image.src;
+            })
+        });
+    </script>
+  </body>
+</html>
