@@ -1,0 +1,9 @@
+.images-container img {
+  height: 100px;
+  cursor: pointer;
+}
+
+#modal-image {
+  width: 500px;
+  cursor: pointer;
+}
